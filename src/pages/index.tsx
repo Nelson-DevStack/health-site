@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
-import styles from '../styles/Home.module.css';
+import Heading from '../components/UI/Heading';
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
       <main>
         <div>
-          <h1>Health</h1>
+          <Heading>Quer uma Alimentação Saudável?</Heading>
         </div>
       </main>
     </>
