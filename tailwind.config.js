@@ -7,6 +7,10 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      heading: ['Poppins', 'sans-serif'],
+      text: ['Work Sans', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],

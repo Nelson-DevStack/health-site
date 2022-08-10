@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import Heading from '../components/UI/Heading';
+import Text from '../components/UI/Text';
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,14 @@ const Home: NextPage = () => {
 
       <main>
         <div>
+          <p className="font-heading">abc</p>
           <Heading>Quer uma Alimentação Saudável?</Heading>
+          <Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            deserunt repellendus ipsam doloremque excepturi aperiam rerum harum
+            animi laborum, consequatur aut possimus sequi perferendis iusto
+            dolor iure laboriosam id beatae.
+          </Text>
         </div>
       </main>
     </>
