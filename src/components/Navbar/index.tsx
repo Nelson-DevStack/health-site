@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header className="w-full h-16 col-span-4 md:col-span-8 lg:col-span-12 bg-white z-100 shadow-md fixed">
       <Container>
-        <nav className="flex h-full justify-between items-center">
+        <nav className="w-full flex h-full justify-between items-center">
           <a href="/">Health</a>
 
           <ul className="flex space-x-6">
