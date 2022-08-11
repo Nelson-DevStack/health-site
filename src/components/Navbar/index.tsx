@@ -4,7 +4,7 @@ import Container from '../UI/Container';
 
 const Navbar = () => {
   return (
-    <header className="w-full h-16 col-span-4 md:col-span-8 lg:col-span-12 bg-white z-100 shadow-md fixed">
+    <header className="bg-white w-full h-16 col-span-4 md:col-span-8 lg:col-span-12 z-[999] shadow-md z-100 fixed">
       <Container>
         <nav className="w-full flex h-full justify-between items-center">
           <a href="/">Health</a>

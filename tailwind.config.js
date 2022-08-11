@@ -11,7 +11,11 @@ module.exports = {
       heading: ['Poppins', 'sans-serif'],
       text: ['Work Sans', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        mainColor: '#F24444',
+      },
+    },
   },
   plugins: [],
 };

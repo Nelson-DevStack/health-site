@@ -1,14 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import React from 'react';
 
+import MainHero from '../components/MainHero';
 import Navbar from '../components/Navbar';
-import Container from '../components/UI/Container';
-import Heading from '../components/UI/Heading';
+import SocialProof from '../components/SocialProof';
 import Main from '../components/UI/Main';
-import Text from '../components/UI/Text';
-import { mainColor } from '../utils/colors';
 
 const Home: NextPage = () => {
   return (
@@ -21,29 +18,9 @@ const Home: NextPage = () => {
 
       <Navbar />
 
-      <Main>
-        <section className="md:grid md:grid-cols-2 md:relative md:h-96 lg:min-h-[90vh]">
-          <div className="bg-[url('/hero-image1.jpg')] md:order-2 w-full h-52 md:h-auto bg-cover bg-center md:absolute md:w-full inset-0" />
-          <Container className="md:col-span-1 relative md:flex md:items-center">
-            <div className="w-full md:max-w-lg md:w-auto bg-white md:order-1 md:bg-transparent p-5">
-              <Heading>
-                Procura uma{' '}
-                <span style={{ color: mainColor }}>Alimentação Saudável</span>?
-              </Heading>
-              <Text className="md:max-w-sm">
-                Conheça nossas receitas e dicas para ser cada vez mais saudável.
-              </Text>
-
-              <button
-                type="button"
-                // className="p-2 px-5 mt-4 rounded-sm text-slate-100 bg-[#F44444]"
-                className={`p-2 px-5 mt-4 rounded-sm text-slate-100 bg-[${mainColor}]`}
-              >
-                <Link href="/">Conhecer</Link>
-              </button>
-            </div>
-          </Container>
-        </section>
+      <Main className="">
+        <MainHero />
+        <SocialProof />
       </Main>
     </>
   );
