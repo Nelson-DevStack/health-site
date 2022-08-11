@@ -21,7 +21,7 @@ body {
   tablets - 8 columns
   phones - 4 columns
 */
-body {
+#__next {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -49,13 +49,13 @@ a {
 
 
 @media screen and (min-width: 768px) {
-  body {
+  #__next {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 }
 
 @media screen and (min-width: 1024px) {
-  body {
+  #__next {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }

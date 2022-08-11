@@ -2,6 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
+import Main from '../components/Main';
+import Navbar from '../components/Navbar';
+import Container from '../components/UI/Container';
 import Heading from '../components/UI/Heading';
 import Text from '../components/UI/Text';
 
@@ -14,9 +17,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div>
-          <p className="font-heading">abc</p>
+      <Navbar />
+
+      <Main>
+        <Container>
           <Heading>Quer uma Alimentação Saudável?</Heading>
           <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -24,8 +28,9 @@ const Home: NextPage = () => {
             animi laborum, consequatur aut possimus sequi perferendis iusto
             dolor iure laboriosam id beatae.
           </Text>
-        </div>
-      </main>
+          <p className="font-heading">abc</p>
+        </Container>
+      </Main>
     </>
   );
 };
