@@ -19,19 +19,23 @@ const BenefitsSection = () => {
         />
       </div>
 
-      <div className="w-full bg-secondaryColor relative">
-        <div className="w-full h-full absolute bg-[url('/health-word-pattern.svg')]  bg-repeat bg-center bg-cover fill-red-900" />
+      <div className="w-full bg-secondaryColor">
+        <div className="w-full h-full absolute bg-[url('/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-40 h-[150%] absolute z-100" />
         <Container>
           <div className="w-full py-20 lg:grid lg:grid-cols-2 items-center">
             <div className="flex flex-col gap-5 max-w-lg mx-auto">
               <div className="relative ml-20 w-60 h-40 self-end">
-                <Image src="/fruits.jpg" layout="fill" className="rounded-lg" />
+                <Image
+                  src="/fruits.jpg"
+                  layout="fill"
+                  className="rounded-lg shadow-xl"
+                />
               </div>
               <div className="relative w-60 h-40 self-start">
                 <Image
                   src="/food-white-bg.jpg"
                   layout="fill"
-                  className="rounded-lg left-0"
+                  className="rounded-lg left-0 shadow-xl"
                 />
               </div>
             </div>
