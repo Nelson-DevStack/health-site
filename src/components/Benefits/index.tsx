@@ -9,7 +9,7 @@ import Text from '../UI/Text';
 
 const BenefitsSection = () => {
   return (
-    <section className=" w-full">
+    <section className="w-full">
       <div className="relative -mb-5">
         <Image
           src="/wave-orange-top.svg"
@@ -19,7 +19,8 @@ const BenefitsSection = () => {
         />
       </div>
 
-      <div className="w-full bg-secondaryColor">
+      <div className="w-full bg-secondaryColor relative">
+        <div className="w-full h-full absolute bg-[url('/health-word-pattern.svg')]  bg-repeat bg-center bg-cover fill-red-900" />
         <Container>
           <div className="w-full py-20 lg:grid lg:grid-cols-2 items-center">
             <div className="flex flex-col gap-5 max-w-lg mx-auto">
