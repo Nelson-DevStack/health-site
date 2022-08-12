@@ -20,7 +20,7 @@ const BenefitsSection = () => {
       </div>
 
       <div className="w-full bg-secondaryColor">
-        <div className="w-full h-full absolute bg-[url('/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-40 h-[150%] absolute z-100" />
+        <div className="w-full h-full absolute bg-[url('/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-40 h-[100%] " />
         <Container>
           <div className="w-full py-20 lg:grid lg:grid-cols-2 items-center">
             <div className="flex flex-col gap-5 max-w-lg mx-auto">

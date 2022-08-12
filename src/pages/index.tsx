@@ -7,6 +7,7 @@ import BenefitsSection from '../components/Benefits';
 import MainHero from '../components/MainHero';
 import Navbar from '../components/Navbar';
 import SocialProof from '../components/SocialProof';
+import TrialSection from '../components/Trial';
 import Main from '../components/UI/Main';
 
 const Home: NextPage = () => {
@@ -20,11 +21,12 @@ const Home: NextPage = () => {
 
       <Navbar />
 
-      <Main className="">
+      <Main>
         <MainHero />
         <SocialProof />
         <BenefitsSection />
         <About />
+        <TrialSection />
       </Main>
     </>
   );
