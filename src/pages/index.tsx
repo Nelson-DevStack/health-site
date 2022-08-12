@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
+import BenefitsSection from '../components/Benefits';
 import MainHero from '../components/MainHero';
 import Navbar from '../components/Navbar';
 import SocialProof from '../components/SocialProof';
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Main className="">
         <MainHero />
         <SocialProof />
+        <BenefitsSection />
       </Main>
     </>
   );
