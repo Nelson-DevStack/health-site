@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 import Container from '../UI/Container';
 import Heading from '../UI/Heading';
@@ -10,7 +11,6 @@ const FaqSection = () => {
   // const [showContent, setShowContent] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [accordionId, setAccordionId] = useState<string | number>(0);
-  const boxStyle = `border rounded-md bg-gray-100 my-4 cursor-pointer transition transition-100 h-full flex items-center flex-col`;
   const accordionItems = [
     {
       id: 1,
@@ -38,6 +38,14 @@ const FaqSection = () => {
     setAccordionId(0);
   };
 
+  const handleAccordionClick = (id: string | number) => {
+    if (showContent) {
+      handleCloseAccordion();
+    }
+    handleShowContent(id);
+    setAccordionId(id);
+  };
+
   return (
     <section>
       <Container className="py-24">
@@ -49,6 +57,7 @@ const FaqSection = () => {
             <button onClick={() => setShowContent(!showContent)} type="button">
               Show
             </button>
+            {accordionId}
             {/* <div className="bg-red-200 transition">abc</div> */}
             {/* <div
               className={
@@ -115,30 +124,35 @@ const FaqSection = () => {
               </div>
             </div> */}
 
-            {accordionItems.map((item) => (
-              <div className={boxStyle}>
-                <button type="button" onClick={handleCloseAccordion}>
-                  Close
-                </button>
-                <div className="p-3">
-                  <button
-                    type="button"
-                    onClick={() => handleShowContent(item.id)}
-                  >
-                    +
-                  </button>
-                  <Text>+ {item.question}</Text>
-                </div>
-                {/* <div
-                  className={`bg-white mx-auto w-full p-3 ${
-                    showContent ? 'opacity-1' : 'opacity-0 max-h-0 p-0'
-                  }`}
-                > */}
-
+            {/* {accordionItems.map((item) => (
                 <div
                   className={`bg-white mx-auto w-full p-3 ${
                     showContent && accordionId === item.id
                       ? 'opacity-1'
+                      : 'opacity-0 max-h-0 p-0'
+                  }`}
+                >
+                  <Text>{item.answer}</Text>
+                </div>
+              </div>
+            ))} */}
+
+            {accordionItems.map((item) => (
+              <div className="border border-slate-300 rounded-md my-4">
+                <button
+                  type="button"
+                  onClick={() => handleAccordionClick(item.id)}
+                  className={`w-full p-4  border-b transition rounded-t-md text-gray-900 text-lg font-medium hover:bg-gray-300 flex items-center justify-between gap-4 text-start ${
+                    accordionId === item.id ? 'bg-slate-300' : 'bg-slate-50'
+                  }`}
+                >
+                  <h2>{item.question}</h2>
+                  <AiFillCaretDown />
+                </button>
+                <div
+                  className={`${
+                    showContent && accordionId === item.id
+                      ? 'opacity-1 p-4'
                       : 'opacity-0 max-h-0 p-0'
                   }`}
                 >
