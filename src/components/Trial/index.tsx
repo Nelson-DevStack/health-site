@@ -13,7 +13,7 @@ const TrialSection = () => {
       className="grid md:grid-cols-2 gap-10"
       style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
     >
-      <div className="my-10 md:order-2 max-w-md mx-auto self-start py-10">
+      <div className="my-10 md:order-2 max-w-xs px-5  md:max-w-md mx-auto self-start py-10 md:mx-0">
         <Heading>
           Assine por um mês <span className="text-mainColor">grátis</span>
         </Heading>
@@ -22,7 +22,7 @@ const TrialSection = () => {
           Use o nosso App por 30 dias grátis e receba receitas diariamente:
         </Text>
 
-        <form className="flex flex-col max-w-sm">
+        <form className="flex flex-col max-w-md">
           <label htmlFor="name" className={labelStyle}>
             Seu nome
             <input className={inputStyle} type="text" id="name" />
