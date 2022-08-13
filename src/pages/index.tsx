@@ -8,6 +8,7 @@ import FaqSection from '../components/FaqSection';
 import MainHero from '../components/MainHero';
 import Navbar from '../components/Navbar';
 import SocialProof from '../components/SocialProof';
+import SupportSection from '../components/Support';
 import TrialSection from '../components/Trial';
 import Main from '../components/UI/Main';
 
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
         <About />
         <TrialSection />
         <FaqSection />
+        <SupportSection />
       </Main>
     </>
   );
