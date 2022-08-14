@@ -5,6 +5,7 @@ import React from 'react';
 import About from '../components/About';
 import BenefitsSection from '../components/Benefits';
 import FaqSection from '../components/FaqSection';
+import Footer from '../components/Footer';
 import MainHero from '../components/MainHero';
 import Navbar from '../components/Navbar';
 import SocialProof from '../components/SocialProof';
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
         <TrialSection />
         <FaqSection />
         <SupportSection />
+        <Footer />
       </Main>
     </>
   );
