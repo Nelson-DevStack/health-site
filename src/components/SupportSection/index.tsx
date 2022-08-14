@@ -26,7 +26,10 @@ const SupportSection = () => {
           </div>
 
           <div className="">
-            <form className="flex flex-col">
+            <form
+              className="flex flex-col"
+              onSubmit={(e) => e.preventDefault()}
+            >
               <label htmlFor="name" className={labelStyle}>
                 Seu nome
                 <input className={inputStyle} type="text" id="name" />

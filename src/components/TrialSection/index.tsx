@@ -23,7 +23,10 @@ const TrialSection = () => {
           Use o nosso App por 30 dias grátis e receba receitas diariamente:
         </Text>
 
-        <form className="flex flex-col max-w-md">
+        <form
+          className="flex flex-col max-w-md"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <label htmlFor="name" className={labelStyle}>
             Seu nome
             <input className={inputStyle} type="text" id="name" />
