@@ -1,14 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
+import LogoLink from '../LogoLink';
 import Container from '../UI/Container';
 
 const Footer = () => {
   return (
     <footer className="z-10 w-full py-10">
       <Container>
-        <Link href="/">Health</Link>
+        <LogoLink />
 
         <div className="flex flex-col w-full mt-6 gap-5 md:flex-row md:gap-20">
           <ul>
