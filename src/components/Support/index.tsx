@@ -14,7 +14,7 @@ const SupportSection = () => {
       className="py-10 md:px-10"
       style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
     >
-      <Container className="grid justify-center gap-10 md:grid-cols-2">
+      <Container className="grid justify-center gap-10 md:grid-cols-2 items-center">
         <div className="max-w-md">
           <div>
             <Heading>Suporte</Heading>
