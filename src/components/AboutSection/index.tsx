@@ -16,7 +16,7 @@ const About = () => {
     <section className="py-10">
       <Container className="grid md:grid-cols-2 gap-10 items-center">
         <div className="md:max-w-md">
-          <Heading className="my-2 text-center md:text-left">
+          <Heading className="mt-2 mb-5 md:mt-0 md:mb-0 md:my-2 text-center md:text-left">
             Sobre a empresa
           </Heading>
           <Text className="mb-5">{paragraph1}</Text>

@@ -14,7 +14,7 @@ const MainHero = () => {
         <div className="w-full md:max-w-lg md:w-auto bg-white md:order-1 md:bg-transparent p-5">
           <Heading>
             Procura uma{' '}
-            <span style={{ color: mainColor }}>Alimentação Saudável</span>?
+            <span style={{ color: mainColor }}>Alimentação Saudável?</span>
           </Heading>
           <Text className="md:max-w-sm">
             Conheça nossas receitas e dicas para ser cada vez mais saudável.

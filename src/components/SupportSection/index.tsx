@@ -7,12 +7,16 @@ import Text from '../UI/Text';
 
 const SupportSection = () => {
   const labelStyle = 'flex flex-col my-2';
-  const inputStyle = 'border text-lg my-1 rounded-md border-gray-300 p-1';
+  const inputStyle =
+    'border text-lg my-1 rounded-md border-gray-300 p-1 outline-none focus:border-mainColor';
 
   return (
     <section
       className="py-10 md:px-10"
-      style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
+      style={{
+        boxShadow:
+          'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px',
+      }}
     >
       <Container className="grid justify-center gap-10 md:grid-cols-2 items-center">
         <div className="max-w-md">

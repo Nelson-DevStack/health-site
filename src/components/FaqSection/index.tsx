@@ -17,12 +17,12 @@ const FaqSection = () => {
     {
       id: 2,
       question: 'Como posso entrar em contato com a empresa?',
-      answer: 'O período de testes fica disponível por 30 dias',
+      answer: 'Entre em contato pelo Suporte no site do Health',
     },
     {
       id: 3,
       question: 'Quais são as formas de pagamento?',
-      answer: 'O período de testes fica disponível por 30 dias',
+      answer: 'Aceitamos cartões de crédito, débito e PIX',
     },
   ];
 
@@ -61,8 +61,8 @@ const FaqSection = () => {
                 <button
                   type="button"
                   onClick={() => handleAccordionClick(item.id)}
-                  className={`w-full p-4  border-b transition rounded-t-md text-gray-900 text-lg font-medium hover:bg-gray-300 flex items-center justify-between gap-4 text-start ${
-                    accordionId === item.id ? 'bg-slate-300' : 'bg-slate-50'
+                  className={`w-full p-4  border-b transition rounded-t-md text-gray-900 text-lg font-medium hover:bg-slate-200 flex items-center justify-between gap-4 text-start ${
+                    accordionId === item.id ? 'bg-slate-200' : 'bg-slate-50'
                   }`}
                 >
                   <h2>{item.question}</h2>

@@ -6,7 +6,8 @@ import Text from '../UI/Text';
 
 const TrialSection = () => {
   const labelStyle = 'flex flex-col my-2';
-  const inputStyle = 'border text-lg my-1 rounded-md border-gray-300 p-1';
+  const inputStyle =
+    'border text-lg my-1 rounded-md border-gray-300 p-1 outline-none focus:border-mainColor';
 
   return (
     <section
