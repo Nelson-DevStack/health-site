@@ -10,17 +10,19 @@ import Text from '../UI/Text';
 const BenefitsSection = () => {
   return (
     <section className="w-full">
-      <div className="relative -mb-5">
+      <div className="relative -mb-5 sm:-mb-10 lg:-mb-30">
         <Image
           src="/wave-orange-top.svg"
           layout="responsive"
           width={300}
+          // width={100}
+          // height={70}
           height={70}
         />
       </div>
 
       <div className="w-full bg-secondaryColor">
-        <div className="w-full h-full absolute bg-[url('/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-40 h-[100%] " />
+        <div className="w-full h-full absolute bg-[url('/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-80 h-[100%] " />
         <Container>
           <div className="w-full py-20 lg:grid lg:grid-cols-2 items-center">
             <div className="flex flex-col gap-5 max-w-lg mx-auto">
@@ -82,7 +84,7 @@ const BenefitsSection = () => {
         </Container>
       </div>
 
-      <div className="relative -mt-5">
+      <div className="relative -mt-1 md:-mt-5">
         <Image
           src="/wave-orange-bottom.svg"
           layout="responsive"
