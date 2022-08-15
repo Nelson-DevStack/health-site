@@ -20,7 +20,7 @@ const Navbar = () => {
 
           <button
             type="button"
-            className={`text-2xl flex items-center justify-center transition duration-500 transition-100 max-h-0 ${
+            className={`text-2xl flex items-center justify-center transition duration-500 transition-100 max-h-0 lg:hidden ${
               showMenu ? 'max-h-0' : 'max-h-10'
             }`}
             onClick={handleMenuClick}
@@ -29,7 +29,7 @@ const Navbar = () => {
           </button>
 
           <ul
-            className={`flex flex-col items-center pt-12 gap-5 w-full bg-white/75 absolute min-h-screen min-w-screen left-0 right-0 top-16 shadow-md text-xl backdrop-blur-lg translate-x-full transition duration-500 ${
+            className={`flex flex-col items-center pt-12 gap-5 w-full bg-white/75 absolute min-h-screen min-w-screen left-0 right-0 top-16 shadow-md backdrop-blur-lg translate-x-full transition duration-500 lg:min-w-none lg:translate-x-0 lg:static lg:min-h-fit lg:flex-row lg:w-auto lg:pt-0 lg:shadow-none transition-transform ${
               showMenu ? 'translate-x-0' : ''
             }`}
           >
@@ -40,7 +40,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 Home
@@ -53,7 +53,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 Produto
@@ -66,7 +66,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 Diferença
@@ -79,7 +79,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 Sobre
@@ -92,7 +92,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 App
@@ -105,7 +105,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 FAQ
@@ -118,7 +118,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl lg:text-lg"
                 activeClass="text-mainColor font-medium"
               >
                 Contato
