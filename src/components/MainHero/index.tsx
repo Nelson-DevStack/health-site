@@ -12,7 +12,7 @@ const MainHero = () => {
       className="md:grid md:grid-cols-2 md:relative md:h-96 lg:min-h-[90vh] shadow-md"
       id="home"
     >
-      <div className="bg-[url('/hero-image1.jpg')] md:order-2 w-full h-52 md:h-auto bg-cover bg-center md:absolute md:w-full inset-0 md:bg-fixed" />
+      <div className="bg-[url('/assets/hero-image1.jpg')] md:order-2 w-full h-52 md:h-auto bg-cover bg-center md:absolute md:w-full inset-0 md:bg-fixed" />
       <Container className="md:col-span-1 relative md:flex md:items-center  z-10">
         <div className="w-full md:max-w-lg md:w-auto bg-white md:order-1 md:bg-transparent p-5">
           <Heading>

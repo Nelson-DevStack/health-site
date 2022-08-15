@@ -11,7 +11,7 @@ const SupportSection = () => {
     'border text-lg my-1 rounded-md border-gray-300 p-1 outline-none focus:border-mainColor';
 
   return (
-    <SecImage sectionId="contact" imageLink="/support.svg" boxShadow>
+    <SecImage sectionId="contact" imageLink="/assets/support.svg" boxShadow>
       <div>
         <Heading>Suporte</Heading>
         <Text>Tem alguma dúvida? Entre em contato com o suporte 24h</Text>
@@ -49,14 +49,14 @@ const SupportSection = () => {
             href="https://google.com"
             className="rounded-full w-12 h-12 border shadow-md flex items-center justify-center relative hover:shadow-xl hover:scale-105"
           >
-            <Image src="/gmail-logo.svg" width={30} height={30} />
+            <Image src="/assets/gmail-logo.svg" width={30} height={30} />
           </a>
 
           <a
             href="https://instagram.com"
             className="rounded-full w-12 h-12 border shadow-md flex items-center justify-center relative hover:shadow-xl hover:scale-105"
           >
-            <Image src="/instagram-logo.svg" width={30} height={30} />
+            <Image src="/assets/instagram-logo.svg" width={30} height={30} />
           </a>
         </div>
       </div>

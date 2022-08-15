@@ -12,7 +12,7 @@ const About = () => {
     'Já formados, estudantes da Universiade XYZ fundaram a empresa “Nome da Empresa”, responsável por distribuir o conhecimento de Nutrição para a população através de Manuais, Guias, Revistas e Conteúdo Online.';
 
   return (
-    <SecImage sectionId="sobre" imageLink="/app.svg">
+    <SecImage sectionId="sobre" imageLink="/assets/app.svg">
       <Heading className="mt-2 mb-5 md:mt-0 md:my-2 text-center md:text-left">
         Sobre a empresa
       </Heading>

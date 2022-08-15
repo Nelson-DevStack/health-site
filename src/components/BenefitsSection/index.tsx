@@ -12,30 +12,28 @@ const BenefitsSection = () => {
     <section className="w-full">
       <div className="relative -mb-5 sm:-mb-10 lg:-mb-30">
         <Image
-          src="/wave-orange-top.svg"
+          src="/assets/wave-orange-top.svg"
           layout="responsive"
           width={300}
-          // width={100}
-          // height={70}
           height={70}
         />
       </div>
 
       <div className="w-full bg-secondaryColor">
-        <div className="w-full h-full absolute bg-[url('/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-80 h-[100%] " />
+        <div className="w-full h-full absolute bg-[url('/assets/health-word-pattern.png')]  bg-repeat bg-center bg-contain opacity-80 h-[100%] " />
         <Container>
           <div className="w-full py-20 lg:grid lg:grid-cols-2 items-center">
             <div className="flex flex-col gap-5 max-w-lg mx-auto">
               <div className="relative ml-20 w-60 h-40 self-end">
                 <Image
-                  src="/fruits.jpg"
+                  src="/assets/fruits.jpg"
                   layout="fill"
                   className="rounded-lg shadow-xl"
                 />
               </div>
               <div className="relative w-60 h-40 self-start">
                 <Image
-                  src="/food-white-bg.jpg"
+                  src="/assets/food-white-bg.jpg"
                   layout="fill"
                   className="rounded-lg left-0 shadow-xl"
                 />
@@ -86,7 +84,7 @@ const BenefitsSection = () => {
 
       <div className="relative -mt-1 md:-mt-5">
         <Image
-          src="/wave-orange-bottom.svg"
+          src="/assets/wave-orange-bottom.svg"
           layout="responsive"
           width={300}
           height={70}

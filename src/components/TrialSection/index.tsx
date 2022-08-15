@@ -48,7 +48,7 @@ const TrialSection = () => {
       </div>
 
       <div className="relative w-full h-[31rem] border md:order-1">
-        <Image src="/food.jpg" layout="fill" objectFit="cover" />
+        <Image src="/assets/food.jpg" layout="fill" objectFit="cover" />
       </div>
     </section>
   );
