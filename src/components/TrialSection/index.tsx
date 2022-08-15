@@ -11,6 +11,7 @@ const TrialSection = () => {
 
   return (
     <section
+      id="app"
       className="grid md:grid-cols-2 gap-10"
       style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
     >

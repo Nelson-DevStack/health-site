@@ -46,7 +46,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section>
+    <section id="faq">
       <Container className="py-24">
         <div className="max-w-lg mx-auto flex flex-col items-center">
           <Heading>FAQ e Dúvidas Recentes</Heading>

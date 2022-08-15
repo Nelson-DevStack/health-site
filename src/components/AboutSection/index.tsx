@@ -13,7 +13,7 @@ const About = () => {
     'Já formados, estudantes da Universiade XYZ fundaram a empresa “Nome da Empresa”, responsável por distribuir o conhecimento de Nutrição para a população através de Manuais, Guias, Revistas e Conteúdo Online.';
 
   return (
-    <section className="py-10">
+    <section className="py-10" id="sobre">
       <Container className="grid md:grid-cols-2 gap-10 items-center">
         <div className="md:max-w-md">
           <Heading className="mt-2 mb-5 md:mt-0 md:mb-0 md:my-2 text-center md:text-left">

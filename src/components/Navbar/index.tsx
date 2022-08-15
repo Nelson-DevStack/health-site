@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import LogoLink from '../LogoLink';
 import Container from '../UI/Container';
@@ -12,22 +13,77 @@ const Navbar = () => {
 
           <ul className="flex space-x-6">
             <li>
-              <a href="/">Home</a>
+              <Link
+                to="home"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                // className="after:border after:border-5 after:border-mainColor flex flex-col relative after:absolute after:w-full after:top-6"
+                activeClass="text-mainColor font-medium"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href="/">Produto</a>
+              <Link
+                to="produto"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                activeClass="text-mainColor font-medium"
+              >
+                Produto
+              </Link>
             </li>
             <li>
-              <a href="/">Sobre</a>
+              <Link
+                to="sobre"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                activeClass="text-mainColor font-medium"
+              >
+                Sobre
+              </Link>
             </li>
             <li>
-              <a href="/">App</a>
+              <Link
+                to="app"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                activeClass="text-mainColor font-medium"
+              >
+                App
+              </Link>
             </li>
             <li>
-              <a href="/">FAQ</a>
+              <Link
+                to="faq"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                activeClass="text-mainColor font-medium"
+              >
+                FAQ
+              </Link>
             </li>
             <li>
-              <a href="/">Contato</a>
+              <Link
+                to="contato"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                activeClass="text-mainColor font-medium"
+              >
+                Contato
+              </Link>
             </li>
           </ul>
         </nav>
