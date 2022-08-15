@@ -19,7 +19,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                // className="after:border after:border-5 after:border-mainColor flex flex-col relative after:absolute after:w-full after:top-6"
+                className="cursor-pointer"
                 activeClass="text-mainColor font-medium"
               >
                 Home
@@ -32,9 +32,23 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
+                className="cursor-pointer"
                 activeClass="text-mainColor font-medium"
               >
                 Produto
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="produto"
+                duration={500}
+                spy
+                smooth
+                offset={-80}
+                className="cursor-pointer"
+                activeClass="text-mainColor font-medium"
+              >
+                Diferença
               </Link>
             </li>
             <li>
@@ -44,6 +58,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
+                className="cursor-pointer"
                 activeClass="text-mainColor font-medium"
               >
                 Sobre
@@ -56,6 +71,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
+                className="cursor-pointer"
                 activeClass="text-mainColor font-medium"
               >
                 App
@@ -68,6 +84,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
+                className="cursor-pointer"
                 activeClass="text-mainColor font-medium"
               >
                 FAQ
@@ -80,6 +97,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
+                className="cursor-pointer"
                 activeClass="text-mainColor font-medium"
               >
                 Contato
