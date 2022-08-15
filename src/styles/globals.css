@@ -37,6 +37,10 @@ a {
   padding: 0;
 }
 
+li, a {
+  font-family: 'Work Sans', sans-serif;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

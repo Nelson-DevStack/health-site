@@ -21,8 +21,10 @@ const About = () => {
         Sobre a empresa
       </Heading>
 
-      {paragraphs.map((paragraph) => (
-        <Text className="my-5">{paragraph}</Text>
+      {paragraphs.map((paragraph, i) => (
+        <Text className="my-5" key={i}>
+          {paragraph}
+        </Text>
       ))}
     </SecImage>
   );
