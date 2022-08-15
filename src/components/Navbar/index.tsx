@@ -7,6 +7,7 @@ import LogoLink from '../LogoLink';
 import Container from '../UI/Container';
 
 const Navbar = () => {
+  const linkStyle = `cursor-pointer text-xl lg:text-md`;
   const [showMenu, setShowMenu] = useState(false);
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
@@ -40,7 +41,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 Home
@@ -53,7 +54,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 Produto
@@ -65,8 +66,8 @@ const Navbar = () => {
                 duration={500}
                 spy
                 smooth
-                offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                offset={400}
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 Diferença
@@ -79,7 +80,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 Sobre
@@ -92,7 +93,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 App
@@ -105,7 +106,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 FAQ
@@ -118,7 +119,7 @@ const Navbar = () => {
                 spy
                 smooth
                 offset={-80}
-                className="cursor-pointer text-xl lg:text-lg"
+                className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
                 Contato

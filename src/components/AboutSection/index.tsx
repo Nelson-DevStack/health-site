@@ -1,8 +1,7 @@
-import Image from 'next/image';
 import React from 'react';
 
-import Container from '../UI/Container';
 import Heading from '../UI/Heading';
+import SecImage from '../UI/SecImage';
 import Text from '../UI/Text';
 
 const About = () => {
@@ -13,20 +12,13 @@ const About = () => {
     'Já formados, estudantes da Universiade XYZ fundaram a empresa “Nome da Empresa”, responsável por distribuir o conhecimento de Nutrição para a população através de Manuais, Guias, Revistas e Conteúdo Online.';
 
   return (
-    <section className="py-10" id="sobre">
-      <Container className="grid md:grid-cols-2 gap-10 items-center">
-        <div className="md:max-w-md">
-          <Heading className="mt-2 mb-5 md:mt-0 md:mb-0 md:my-2 text-center md:text-left">
-            Sobre a empresa
-          </Heading>
-          <Text className="mb-5">{paragraph1}</Text>
-          <Text className="mt-5">{paragraph2}</Text>
-        </div>
-        <div className="relative w-full">
-          <Image src="/app.svg" layout="responsive" width={300} height={200} />
-        </div>
-      </Container>
-    </section>
+    <SecImage sectionId="sobre" imageLink="/app.svg">
+      <Heading className="mt-2 mb-5 md:mt-0 md:my-2 text-center md:text-left">
+        Sobre a empresa
+      </Heading>
+      <Text className="mb-5">{paragraph1}</Text>
+      <Text className="mt-5">{paragraph2}</Text>
+    </SecImage>
   );
 };
 
