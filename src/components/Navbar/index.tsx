@@ -7,7 +7,7 @@ import LogoLink from '../LogoLink';
 import Container from '../UI/Container';
 
 const Navbar = () => {
-  const linkStyle = `cursor-pointer text-xl lg:text-md`;
+  const linkStyle = `cursor-pointer text-lg lg:text-base`;
   const [showMenu, setShowMenu] = useState(false);
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
