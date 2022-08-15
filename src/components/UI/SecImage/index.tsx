@@ -7,13 +7,17 @@ type SecImageProps = {
   sectionId: string;
   className?: string;
   children: React.ReactNode | JSX.Element;
-  imageLink: string;
   boxShadow?: boolean;
+  imageLink: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 const SecImage = ({
   sectionId,
   imageLink,
+  imageWidth,
+  imageHeight,
   className,
   boxShadow,
   children,
@@ -32,7 +36,12 @@ const SecImage = ({
         <div className="max-w-md">{children}</div>
 
         <div className="relative w-full">
-          <Image src={imageLink} layout="responsive" width={300} height={200} />
+          <Image
+            src={imageLink}
+            layout="responsive"
+            width={imageWidth || 300}
+            height={imageHeight || 200}
+          />
         </div>
       </Container>
     </section>
@@ -41,6 +50,8 @@ const SecImage = ({
 
 SecImage.defaultProps = {
   className: ' ',
+  imageWidth: null,
+  imageHeight: null,
   boxShadow: false,
 };
 
