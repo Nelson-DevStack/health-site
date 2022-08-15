@@ -61,11 +61,11 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="produto"
+                to="diferenca"
                 duration={500}
                 spy
                 smooth
-                offset={400}
+                offset={100}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >

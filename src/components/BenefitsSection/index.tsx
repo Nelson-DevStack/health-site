@@ -9,7 +9,7 @@ import Text from '../UI/Text';
 
 const BenefitsSection = () => {
   return (
-    <section className="w-full">
+    <section className="w-full" id="diferenca">
       <div className="relative -mb-5 sm:-mb-10 lg:-mb-30">
         <Image
           src="/assets/wave-orange-top.svg"

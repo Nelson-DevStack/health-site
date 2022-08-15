@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Accordion from '../UI/Accordion';
 import Container from '../UI/Container';
