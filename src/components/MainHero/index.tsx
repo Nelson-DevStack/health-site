@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 import { mainColor } from '../../utils/colors';
 import Container from '../UI/Container';
@@ -14,7 +14,7 @@ const MainHero = () => {
     >
       <div className="bg-[url('/assets/hero-image1.jpg')] md:order-2 w-full h-52 md:h-auto bg-cover bg-center md:absolute md:w-full inset-0 md:bg-fixed" />
       <Container className="md:col-span-1 relative md:flex md:items-center  z-10">
-        <div className="w-full md:max-w-lg md:w-auto bg-white md:order-1 md:bg-transparent p-5">
+        <div className="w-full md:max-w-lg md:w-auto bg-white md:order-1 md:bg-transparent p-5 flex flex-col">
           <Heading>
             Procura uma{' '}
             <span style={{ color: mainColor }}>Alimentação Saudável?</span>
@@ -23,12 +23,24 @@ const MainHero = () => {
             Conheça nossas receitas e dicas para ser cada vez mais saudável.
           </Text>
 
-          <button
+          {/* <button
             type="button"
-            className="p-2 px-5 mt-4 rounded-sm text-slate-100 bg-mainColor"
+            className="p-2 px-5 mt-4 rounded-sm text-slate-100 bg-mainColor transition duration-200 hover:bg-darkerRed hover:scale-105"
           >
-            <Link href="/">Conhecer</Link>
-          </button>
+            <ScrollLink to="produto" duration={500} spy smooth offset={-80}>
+              Conhecer
+            </ScrollLink>
+          </button> */}
+          <ScrollLink
+            to="produto"
+            duration={500}
+            spy
+            smooth
+            offset={-80}
+            className="p-2 px-5 mt-4 rounded-sm text-slate-100 bg-mainColor transition duration-200 cursor-pointer hover:bg-darkerRed hover:scale-105 max-w-fit"
+          >
+            Conhecer
+          </ScrollLink>
         </div>
       </Container>
     </section>

@@ -39,7 +39,7 @@ const TrialSection = () => {
           </label>
 
           <button
-            className="bg-mainColor py-2 text-white font-semibold tracking-wide text-md mt-2"
+            className="bg-mainColor py-2 text-white font-semibold tracking-wide text-md mt-2 hover:bg-darkerRed hover:scale-105 transition duration-200 "
             type="submit"
           >
             Experimentar

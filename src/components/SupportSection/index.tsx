@@ -35,7 +35,7 @@ const SupportSection = () => {
           </label>
 
           <button
-            className="bg-secondaryColor py-2 text-white font-semibold tracking-wide text-md mt-2"
+            className="bg-secondaryColor py-2 text-white font-semibold tracking-wide text-md mt-2 transition duration-200 hover:bg-darkerOrange hover:scale-105"
             type="submit"
           >
             Entrar em contato
