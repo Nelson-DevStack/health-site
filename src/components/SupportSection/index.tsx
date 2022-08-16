@@ -11,9 +11,13 @@ const SupportSection = () => {
     'border text-lg my-1 rounded-md border-gray-300 p-1 outline-none focus:border-mainColor';
 
   return (
-    <SecImage sectionId="contact" imageLink="/assets/support.svg" boxShadow>
+    <SecImage
+      sectionId="contact"
+      imageLink="/assets/support.svg"
+      className="border-t"
+    >
       <div>
-        <Heading>Suporte</Heading>
+        <Heading className="my-2">Suporte</Heading>
         <Text>Tem alguma dúvida? Entre em contato com o suporte 24h</Text>
       </div>
 

@@ -7,7 +7,7 @@ const Footer = () => {
   const linkStyle = `text-lg cursor-pointer hover:underline`;
 
   return (
-    <footer className="z-10 w-full py-10">
+    <footer className="z-10 w-full py-10 border-t border-gray-300">
       <Container>
         <LogoLink />
 
