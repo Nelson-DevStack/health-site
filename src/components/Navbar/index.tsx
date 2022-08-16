@@ -65,7 +65,7 @@ const Navbar = () => {
                 duration={500}
                 spy
                 smooth
-                offset={100}
+                offset={-10}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >
@@ -78,7 +78,7 @@ const Navbar = () => {
                 duration={500}
                 spy
                 smooth
-                offset={-80}
+                offset={10}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
               >

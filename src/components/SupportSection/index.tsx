@@ -8,11 +8,11 @@ import Text from '../UI/Text';
 const SupportSection = () => {
   const labelStyle = 'flex flex-col my-2';
   const inputStyle =
-    'border text-lg my-1 rounded-md border-gray-300 p-1 outline-none focus:border-mainColor';
+    'border text-lg my-1 rounded-md border-gray-300 p-1 outline-none focus:border-secondaryColor';
 
   return (
     <SecImage
-      sectionId="contact"
+      sectionId="contato"
       imageLink="/assets/support.svg"
       className="border-t"
     >
@@ -23,19 +23,19 @@ const SupportSection = () => {
 
       <div className="">
         <form className="flex flex-col" onSubmit={(e) => e.preventDefault()}>
-          <label htmlFor="name" className={labelStyle}>
+          <label htmlFor="supportName" className={labelStyle}>
             Seu nome
-            <input className={inputStyle} type="text" id="name" />
+            <input className={inputStyle} type="text" id="supportName" />
           </label>
 
-          <label htmlFor="email" className={labelStyle}>
+          <label htmlFor="supportEmail" className={labelStyle}>
             Email
-            <input className={inputStyle} type="email" id="email" />
+            <input className={inputStyle} type="email" id="supportEmail" />
           </label>
 
-          <label htmlFor="email" className={labelStyle}>
+          <label htmlFor="supportMessage" className={labelStyle}>
             Sua dúvida ou mensagem:
-            <input className={inputStyle} type="email" id="email" />
+            <input className={inputStyle} type="email" id="supportMessage" />
           </label>
 
           <button
