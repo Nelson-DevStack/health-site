@@ -20,7 +20,7 @@ const FaqSection = () => {
     {
       id: 3,
       question: 'Quais são as formas de pagamento?',
-      answer: 'Aceitamos cartões de crédito, débito e PIX',
+      answer: 'Aceitamos cartões de crédito, de débito e boletos',
     },
   ];
 

@@ -7,7 +7,7 @@ import Text from '../UI/Text';
 const About = () => {
   const paragraphs = [
     'Fundada em 2005, a Health se originou após pesquisas que concluíram que o conhecimento sobre nutrição e alimentação serem feitas. A conclusão era que a nutrição e Saúde Alimentar não era lecionada para grande parte da população.',
-    'Já formados, estudantes da Universiade XYZ fundaram essa empresa, que é responsável por distribuir o conhecimento de Nutrição para a população através de Manuais, Guias, Revistas e Conteúdo Online.',
+    'Já formados, estudantes da Universidade XYZ fundaram essa empresa, que é responsável por distribuir o conhecimento de Nutrição para a população através de Manuais, Guias, Revistas e Conteúdo Online.',
   ];
 
   return (
