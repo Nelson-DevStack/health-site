@@ -29,7 +29,7 @@ const SupportSection = () => {
           </label>
 
           <label htmlFor="supportEmail" className={labelStyle}>
-            Email
+            Seu E-mail
             <input className={inputStyle} type="email" id="supportEmail" />
           </label>
 

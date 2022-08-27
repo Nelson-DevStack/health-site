@@ -34,7 +34,7 @@ const TrialSection = () => {
           </label>
 
           <label htmlFor="email" className={labelStyle}>
-            Email
+            Seu E-mail
             <input className={inputStyle} type="email" id="email" />
           </label>
 
