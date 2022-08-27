@@ -2,6 +2,7 @@ import React from 'react';
 
 import LogoLink from '../LogoLink';
 import Container from '../UI/Container';
+import Text from '../UI/Text';
 
 const Footer = () => {
   const linkStyle = `text-lg cursor-pointer hover:underline`;
@@ -86,6 +87,12 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+        </div>
+
+        <div className="mt-32 text-center">
+          <Text className="text-center opacity-90">
+            Desenvolvido por Nelson Carvalho - 2022
+          </Text>
         </div>
       </Container>
     </footer>

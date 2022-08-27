@@ -1,8 +1,8 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
-import LogoLink from '../LogoLink';
 import Container from '../UI/Container';
 
 const Navbar = () => {
@@ -16,7 +16,24 @@ const Navbar = () => {
     <header className="bg-white w-full h-16 col-span-4 md:col-span-8 lg:col-span-12 z-[999] shadow-md z-100 fixed">
       <Container>
         <nav className="w-full flex h-full justify-between items-center ">
-          <LogoLink />
+          <Link
+            to="home"
+            duration={500}
+            spy
+            smooth
+            offset={-80}
+            className={linkStyle}
+          >
+            <span className="flex items-center gap-2 text-lg cursor-pointer">
+              <Image
+                src="/assets/fruit-logo.svg"
+                color="#2211ee"
+                width={30}
+                height={30}
+              />
+              <span className="text-mainColor">Health</span>
+            </span>
+          </Link>
 
           <button
             type="button"
