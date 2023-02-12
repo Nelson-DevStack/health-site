@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import { BsCheck2Circle } from 'react-icons/bs';
 
+import img3 from '../../assets/athletes.jpg';
+import img2 from '../../assets/food-white-bg.jpg';
 import img1 from '../../assets/fruits.jpg';
-import { mainColor } from '../../utils/colors';
 import Container from '../UI/Container';
-import Heading from '../UI/Heading';
 import Showcase from '../UI/Showcase';
 import Text from '../UI/Text';
 
@@ -29,6 +29,22 @@ const BenefitsSection = () => {
             subject="inovação"
             title="Conteúdo Atualizado"
             text="Diariamente publicamos novos tópicos e guias em nossas revistas e no App. Não perca a chance de ficar por dentro das melhores dicas de Alimentação e Nutrição."
+            display={0}
+          />
+          <Showcase
+            image={img2}
+            subject="saúde"
+            title="Receitas Saudáveis"
+            text="Diariamente publicamos novos tópicos e guias em nossas revistas e no App. Não perca a chance de ficar por dentro das melhores dicas de Alimentação e Nutrição."
+            display={1}
+          />
+
+          <Showcase
+            image={img3}
+            subject="compromisso"
+            title="App Exclusivo"
+            text="Confira nosso App Exclusivo, que monitora saúde e oferece instruções para balancear sua dieta e guias de exercícios físicos com eficácia garantida."
+            display={0}
           />
         </div>
       </Container>

@@ -20,15 +20,22 @@ const Showcase = ({
   className,
   display,
 }: ShowcaseProps) => {
-  //  If display == 0, the order will be order-1, order-2 ; else: the order will be order-2, order-1
   return (
-    <div className={`grid md:grid-cols-2 items-center gap-16 ${className}`}>
-      <div className="border max-w-sm w-full ml-auto">
+    <div
+      className={`grid md:grid-cols-2 items-center gap-16 my-10 ${className}`}
+    >
+      <div
+        className={`border max-w-md w-full ${
+          display === 1 ? 'order-2' : 'order-1 ml-auto'
+        }`}
+      >
         <Image src={image} className="rounded-md" />
-        {/* <img src={image} /> */}
       </div>
-      {/*  */}
-      <div className="mt-5 md:mt-0 max-w-md mx-auto border ml-0">
+      <div
+        className={`mt-5 md:mt-0 max-w-md ##mx-auto border ${
+          display === 1 ? 'order-1 ml-auto mr-0' : 'order-2'
+        }`}
+      >
         <h3 className="text-[#F27405] uppercase tracking-wide">{subject}</h3>
         <h2 className="text-[#313131] font-heading font-semibold text-3xl">
           {title}
