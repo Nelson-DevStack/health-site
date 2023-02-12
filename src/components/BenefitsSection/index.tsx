@@ -33,7 +33,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="w-full py-20" id="diferenca">
+    <section className="w-full pt-20 pb-10 md:pb-5" id="diferenca">
       <Container>
         <div className="flex flex-col items-center mb-16">
           <h2 className="font-heading font-semibold tracking-wide text-[#F27405] text-3xl text-center">
