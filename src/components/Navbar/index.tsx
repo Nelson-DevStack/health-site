@@ -25,13 +25,6 @@ const Navbar = () => {
             className={linkStyle}
           >
             <span className="flex items-center gap-2 text-lg cursor-pointer">
-              {/* <Image
-                src="/assets/fruit-logo.svg"
-                color="#2211ee"
-                width={30}
-                height={30}
-              />
-              <span className="text-mainColor">Health</span> */}
               <Image src="/assets/health_logo.svg" width={100} height={100} />
             </span>
           </Link>
@@ -60,6 +53,7 @@ const Navbar = () => {
                 offset={-80}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 Home
               </Link>
@@ -73,6 +67,7 @@ const Navbar = () => {
                 offset={-80}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 Produto
               </Link>
@@ -86,6 +81,7 @@ const Navbar = () => {
                 offset={-10}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 Diferença
               </Link>
@@ -99,6 +95,7 @@ const Navbar = () => {
                 offset={10}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 Sobre
               </Link>
@@ -112,6 +109,7 @@ const Navbar = () => {
                 offset={-80}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 App
               </Link>
@@ -125,6 +123,7 @@ const Navbar = () => {
                 offset={-80}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 FAQ
               </Link>
@@ -138,6 +137,7 @@ const Navbar = () => {
                 offset={-80}
                 className={linkStyle}
                 activeClass="text-mainColor font-medium"
+                onClick={handleMenuClick}
               >
                 Contato
               </Link>

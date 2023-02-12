@@ -29,7 +29,7 @@ const Showcase = ({
           display === 1 ? 'order-1 md:order-2 ' : 'md:ml-auto'
         }`}
       >
-        <Image src={image} className="rounded-md" />
+        <Image src={image} className="rounded-md" alt={title} />
       </div>
 
       <div
