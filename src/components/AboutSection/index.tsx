@@ -16,7 +16,7 @@ const About = () => {
       imageLink="/assets/health-lifestyle.svg"
       imageWidth={250}
       imageHeight={250}
-      className="py-0"
+      className="py-4"
     >
       <Heading className="mt-2 mb-5 md:mt-0 md:my-2 text-center md:text-left">
         Sobre a empresa

@@ -24,7 +24,7 @@ const SecImage = ({
 }: SecImageProps) => {
   return (
     <section
-      className={`py-24 md:px-10 ${className}`}
+      className={`md:px-10 ${className}`}
       id={sectionId}
       style={{
         boxShadow: boxShadow
