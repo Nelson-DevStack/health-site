@@ -25,13 +25,14 @@ const Navbar = () => {
             className={linkStyle}
           >
             <span className="flex items-center gap-2 text-lg cursor-pointer">
-              <Image
+              {/* <Image
                 src="/assets/fruit-logo.svg"
                 color="#2211ee"
                 width={30}
                 height={30}
               />
-              <span className="text-mainColor">Health</span>
+              <span className="text-mainColor">Health</span> */}
+              <Image src="/assets/health_logo.svg" width={100} height={100} />
             </span>
           </Link>
 

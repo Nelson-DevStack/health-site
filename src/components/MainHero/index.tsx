@@ -23,14 +23,6 @@ const MainHero = () => {
             Conheça nossas receitas e dicas para ser cada vez mais saudável.
           </Text>
 
-          {/* <button
-            type="button"
-            className="p-2 px-5 mt-4 rounded-sm text-slate-100 bg-mainColor transition duration-200 hover:bg-darkerRed hover:scale-105"
-          >
-            <ScrollLink to="produto" duration={500} spy smooth offset={-80}>
-              Conhecer
-            </ScrollLink>
-          </button> */}
           <ScrollLink
             to="produto"
             duration={500}

@@ -22,18 +22,19 @@ const Showcase = ({
 }: ShowcaseProps) => {
   return (
     <div
-      className={`grid md:grid-cols-2 items-center gap-16 my-10 ${className}`}
+      className={`grid md:grid-cols-2 items-center md:gap-16 my-20 ${className}`}
     >
       <div
-        className={`border max-w-md w-full ${
-          display === 1 ? 'order-2' : 'order-1 ml-auto'
+        className={`max-w-md w-full mx-auto md:m-0  ${
+          display === 1 ? 'order-1 md:order-2 ' : 'md:ml-auto'
         }`}
       >
         <Image src={image} className="rounded-md" />
       </div>
+
       <div
-        className={`mt-5 md:mt-0 max-w-md ##mx-auto border ${
-          display === 1 ? 'order-1 ml-auto mr-0' : 'order-2'
+        className={`mt-5 md:mt-0 max-w-md mx-auto md:m-0 ${
+          display === 1 ? 'order-2 md:order-1 md:ml-auto' : ''
         }`}
       >
         <h3 className="text-[#F27405] uppercase tracking-wide">{subject}</h3>
