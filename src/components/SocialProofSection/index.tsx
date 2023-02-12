@@ -7,7 +7,7 @@ import Container from '../UI/Container';
 
 const SocialProof = () => {
   return (
-    <section className="w-full py-6 md:py-10" id="produto">
+    <section className="w-full py-20" id="produto">
       <Container className="flex flex-col items-center justify-center gap-10 md:gap-16 md:flex-row">
         <div className="flex flex-col items-center">
           <BsBook fontSize={30} />
